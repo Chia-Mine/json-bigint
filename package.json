@@ -1,8 +1,9 @@
 {
   "name": "@chiamine/json-bigint",
-  "version": "1.0.2-beta.1",
+  "version": "1.0.2-beta.2",
   "description": "JSON.parse with bigints support",
   "main": "index.js",
+  "types": "index.d.ts",
   "files": [
     "index.js",
     "lib/parse.js",

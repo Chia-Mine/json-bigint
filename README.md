@@ -1,3 +1,13 @@
+# Notice
+This is a custom version of `json-bigint` which fixed [a critical issue](https://github.com/sidorares/json-bigint/issues/49).
+
+You can check diff from v1.0.0 in the link below.  
+https://github.com/Chia-Mine/json-bigint/compare/390482a8b6b460f98c61c3b65915dbd91fc8e7b2...v1.0.3  
+
+The commit `390482a8b6b460f98c61c3b65915dbd91fc8e7b2` is what the `v1.0.0` tag is pointing.  
+Please also check  
+https://github.com/sidorares/json-bigint/tags
+
 # json-bigint
 
 [![Build Status](https://secure.travis-ci.org/sidorares/json-bigint.png)](http://travis-ci.org/sidorares/json-bigint)

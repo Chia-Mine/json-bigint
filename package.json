@@ -1,19 +1,21 @@
 {
-  "name": "json-bigint",
-  "version": "1.0.0",
+  "name": "@chiamine/json-bigint",
+  "version": "1.0.3",
   "description": "JSON.parse with bigints support",
   "main": "index.js",
+  "types": "index.d.ts",
   "files": [
     "index.js",
+    "index.d.ts",
     "lib/parse.js",
     "lib/stringify.js"
   ],
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha -R spec --check-leaks test/*-test.js"
+    "test": "./node_modules/.bin/mocha -R spec --check-leaks test/*-test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:sidorares/json-bigint.git"
+    "url": "git@github.com:Chia-Mine/json-bigint.git"
   },
   "keywords": [
     "JSON",
@@ -23,12 +25,15 @@
     "json"
   ],
   "author": "Andrey Sidorov <sidorares@yandex.ru>",
+  "contributors": [
+    "Izumi Hoshino <admin@chiamine.jp> (https://github.com/ChiaMineJP)"
+  ],
   "license": "MIT",
   "dependencies": {
     "bignumber.js": "^9.0.0"
   },
   "devDependencies": {
     "chai": "4.2.0",
-    "mocha": "8.0.1"
+    "mocha": "^10.2.0"
   }
 }

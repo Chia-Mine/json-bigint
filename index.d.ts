@@ -1,4 +1,4 @@
-export declare type JSONbigOption = {
+type Option = {
   strict?: boolean;
   storeAsString?: boolean;
   alwaysParseAsBig?: boolean;
@@ -7,11 +7,14 @@ export declare type JSONbigOption = {
   constructorAction?: 'error' | 'ignore' | 'preserve';
 };
 
-declare function JSONbig(option?: JSONbigOption): {
+type JSONbigAPI = {
   stringify: typeof JSON.stringify;
   parse: typeof JSON.parse;
-};
+} & ((option?: Option) => {
+  stringify: typeof JSON.stringify;
+  parse: typeof JSON.parse;
+});
 
-export declare const stringify: typeof JSON.stringify;
-export declare const parse: typeof JSON.parse;
-export default JSONbig;
+
+declare const api: JSONbigAPI;
+export = api;
